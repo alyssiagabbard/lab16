@@ -97,8 +97,8 @@ class myApp(object):
                 drawpad.move(rocket1,4,0)
         elif event.char == " ":
             rocket1Fired=True
-            self.rockets = self - 1
-            self.rocketsTxt.configure(text=numberOfRockets)
+            self.rockets = self.rockets - 1
+            self.rocketsTxt.configure(text=self.rockets)
 
             
     
